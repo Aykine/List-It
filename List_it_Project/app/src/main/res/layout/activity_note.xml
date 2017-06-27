@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/uncheckAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="#9bbcff"
+        android:onClick="uncheckAll"
+        android:padding="15dp"
+        android:text="Uncheck All" />
+
+   <de.hs_bremen.tlizotte.list_it.DynamicListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/itemsListView"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemsListView"
+        android:id="@+id/finishedItems"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/sendToFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/uncheckAll"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/com_facebook_favicon_blue" />
+
+</RelativeLayout>
